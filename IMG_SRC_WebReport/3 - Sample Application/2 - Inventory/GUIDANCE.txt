@@ -1,0 +1,53 @@
+0. List
+
+Bila kita open inventory list ni, dia akan display item dengan current stock number, and
+satu page tu dia display 10 je so nanti akan ade banyak pages lah kalau banyak barang.
+
+Kat sini ade search bar, kalau kosong dia pastu click search dia display semua je. kalau
+input 'a' atau ape2 character/word, dia akan display item yang ade character/word tu.
+
+dekat sini boleh access 3 features, add edit delete.
+
+
+----------------------------------------------------------------------------------------------------
+
+
+1. Add Stock
+
+kita boleh letak name item ngan quantity dia.
+
+untuk name, dia terima je ape2 string tapi kalau empty, keluar message "Please fill in this field".
+
+untuk quantity, dia terima number je and number tu kena >= 0
+kalau kosong keluar message macam atas tu ...
+kalau < 0, keluar "Value must be greater than or equal to 0" ...
+kalau masuk selain number, keluar message "Please enter a number."
+
+bila tekan add to inventory, dia akan tambah index counter num of item by 1
+keluar message, "Stock has been created successfully" pastu redirect ke list balik.
+bila tekan reset, field name akan kosong quantity jadi 1. bila tekan cancel, redirect ke list balik.
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2. Edit Stock
+
+kita boleh edit semula name item ngan quantity (error handling same je cam add stock).
+tekan update stock, just update name ngan quantity je ...
+keluar message, "Stock has been updated successfully".
+tekan cancel redirect ke list balik.
+tekan delete stock akan ke delete stock page (sambung bawah).
+
+
+----------------------------------------------------------------------------------------------------
+
+
+3. Delete Stock
+
+tekan yes, dia delete item tu (index counter num of item tak turun lmao)
+kelaur message "Stock has been deleted successfully"
+tekan cancel, dia redirect ke list balik.
+
+
+

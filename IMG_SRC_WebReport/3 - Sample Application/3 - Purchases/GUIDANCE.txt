@@ -1,0 +1,52 @@
+0. List
+
+Bila kita open purchases list ni, dia akan display bill no., supplier, stocks purchased,
+quantity purchased, total price, date ... (semua ni variable ye)
+
+dekat sini boleh access 3 features, add stock (kira dia supply ke kita), view and delete bill.
+
+
+----------------------------------------------------------------------------------------------------
+
+
+1. Add Stock/Purchase
+
+firstly, kena pilih supplier mane satu nanti keluar burger menu.. pastu tekan next.
+kalau tekan cancel, redirect ke list balik.
+
+pastu dia display name supplier, phone no, gstin no ... kena pilih stock (item) ape nak tambah.
+pastu boleh letak berapa harga satu item dengan quantity pastu dia auto calculate ...
+tekan + add more if nak tambah stock/item lain nanti dia append ke bawah ...
+kalau ade satu row tu je pastu nak delete, dia keluar error "Field cannot be deleted".
+
+untuk quantity, dia terima number je and number tu kena >= 0
+kalau kosong keluar message "Please fill in this field."
+atas ni. kalau masuk selain number, keluar message "Please enter a number."
+kalau < 0, keluar "Value must be greater than or equal to 0" ...
+
+tekan add to purchases, counter purchase bill no. increase by 1, quantity stock/item tu tambah
+keluar message "Purchased items have been registered successfully"
+pastu generate bill (tengok bawah ni pulak)...
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2. View Bill
+
+tak banyak benda, kita boleh print/save bill into pdf.
+tekan go back, redirect ke list balik
+
+
+----------------------------------------------------------------------------------------------------
+
+
+3. Delete Bill
+
+tekan yes, dia delete purchase bill tu (counter purchase bill no. tak turun lmao)
+cari dalam list ... if bill_no[i] == number ape2, delete gituu.
+display "Purchase bill has been deleted successfully"
+tekan cancel, dia redirect ke list balik.
+
+
+

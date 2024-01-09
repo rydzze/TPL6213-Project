@@ -1,0 +1,68 @@
+0. List
+
+Bila kita open sales list ni, dia akan display bill no., customer name, stocks sold,
+quantity sold, total sold price, date ... (semua ni variable ye)
+
+dekat sini boleh access 3 features, add sales (kira dia beli drpd kita), view and delete bill.
+
+
+----------------------------------------------------------------------------------------------------
+
+
+1. Add Sale (Customer Details)
+
+kalau MANE2 FIELD KOSONG, keluar msg "Please fill in this field".
+
+NAME: terima alphabet dengan spacebar je, kalau ade number
+keluar msg "Please match the format requested. Alphabets and Spaces only"
+
+Phone No: 10 digits number, selain number keluar "Please match the format requested. Numbers only"
+kalau tak cukup 10 digits pun keluar benda same.
+
+Email: format kena _@_ ... kalau takde @, keluar msg "Please include an '@' in the email address.
+it is missing an '@'."
+kalau @ paling depan, keluar msg "Please enter a part following '@'. It is incomplete"
+kalau @ paling belakang, keluar msg "Please enter a part followed by '@'. It is incomplete"
+kalau ade symbol selain dot (.) kat belakang @, keluar "A part following '@' should contain the symbol."
+kalau '.' directly belakang '@', keluar msg "'.' is used at a wrong position."
+
+ADDRESS: freedom alphabets ke numbers ...
+
+GSTIN No: 15 digits number, kalau tak cukup atau input selain number keluar
+"Please match the format requested. GSTIN Format Requested".
+
+pilih barang nak jual pastu boleh letak berapa harga satu item dengan quantity then auto calculate
+tekan + add more if nak jual stock/item lain nanti dia append ke bawah ...
+kalau ade satu row tu je pastu nak delete, dia keluar error "Field cannot be deleted".
+
+untuk quantity, dia terima number je and number tu kena >= 0
+kalau kosong keluar message "Please fill in this field."
+atas ni. kalau masuk selain number, keluar message "Please enter a number."
+kalau < 0, keluar "Value must be greater than or equal to 0" ...
+
+tekan add to sales, counter sale bill no. increase by 1, quantity stock/item tu tambah
+keluar message "Sold items have been registered successfully"
+pastu generate bill (tengok bawah ni pulak)...
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2. View Bill
+
+tak banyak benda, kita boleh print/save bill into pdf.
+tekan go back, redirect ke list balik
+
+
+----------------------------------------------------------------------------------------------------
+
+
+3. Delete Bill
+
+tekan yes, dia delete sale bill tu (counter sale bill no. tak turun lmao)
+cari dalam list ... if bill_no[i] == number ape2, delete gituu.
+display "Sale bill has been deleted successfully"
+tekan cancel, dia redirect ke list balik.
+
+
+

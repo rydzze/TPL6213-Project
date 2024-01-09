@@ -1,0 +1,12 @@
+0. Login
+
+takde pape sangat pun, nak login tekan je enter tu ...
+kalau username != "admin || password != admin, keluar error message bawah.
+"Please enter a correct username and password. Note that both fields may be case-sensitive."
+kalau tak null, keluar message "Please fill in this field"
+
+
+----------------------------------------------------------------------------------------------------
+
+
+ABOUT and HOME - takde pape pun, nak buat? terpulang tapi takyah lah
