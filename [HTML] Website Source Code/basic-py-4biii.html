@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Strace | Basic Python</title>
+    <meta name="description" content="TPL6213 Project" />
+    <meta property="og:title" content="Strace" />
+    <meta property="og:description" content="TPL6213 Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/pfp.jpg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <style>
+      html {
+      scroll-behavior: smooth;
+      }
+    </style>
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./basic-py-4biii.css" rel="stylesheet" />
+
+      <div class="basic-py4biii-container">
+        <div class="basic-py4biii-banner">
+          <div class="basic-py4biii-main-content">
+            <h1 class="basic-py4biii-heading">SUBPROGRAMS</h1>
+            <div class="basic-py4biii-container1">
+              <a href="basic-py-4ai.html" class="basic-py4biii-navlink button">
+                Fundamentals of Subprograms
+              </a>
+              <a
+                href="basic-py-4aii.html"
+                class="basic-py4biii-navlink1 button"
+              >
+                Local Referencing Environments
+              </a>
+              <a href="basic-py-4bi.html" class="basic-py4biii-navlink2 button">
+                Parameter-Passing Method
+              </a>
+              <a
+                href="basic-py-4bii.html"
+                class="basic-py4biii-navlink3 button"
+              >
+                Indirect Subprograms Calling
+              </a>
+            </div>
+            <div class="basic-py4biii-container2">
+              <a
+                href="basic-py-4biii.html"
+                class="basic-py4biii-navlink4 button"
+              >
+                Design Issues for Functions
+              </a>
+              <a
+                href="basic-py-4biv.html"
+                class="basic-py4biii-navlink5 button"
+              >
+                Overloaded and Generic Subprograms
+              </a>
+              <a href="basic-py-4bv.html" class="basic-py4biii-navlink6 button">
+                User-Defined Overloaded Operators
+              </a>
+            </div>
+            <div class="basic-py4biii-content-here">
+              <h1 class="basic-py4biii-text">
+                <span>Design Issues for Functions</span>
+                <br />
+              </h1>
+              <div class="basic-py4biii-container3">
+                <div class="basic-py4biii-column">
+                  <h1 class="basic-py4biii-text03">
+                    <span>Python allows side effects :O</span>
+                    <br />
+                  </h1>
+                  <span class="basic-py4biii-text06">
+                    Function can exhibit side effects that will modify the
+                    original variable.
+                  </span>
+                  <img
+                    alt="image"
+                    src="https://github.com/rydzze/TPL6213-Project/blob/main/IMG_SRC_WebReport/2%20-%20Basic%20Element%20of%20Python/4b%20Subprogram_Ariff/DesignIssue1.png?raw=true"
+                    class="basic-py4biii-image"
+                  />
+                  <span class="basic-py4biii-text07">
+                    <span class="basic-py4biii-text08">itemList</span>
+                    <span>was</span>
+                    <span class="basic-py4biii-text10">modified</span>
+                    <span>after</span>
+                    <span class="basic-py4biii-text12">FSE function</span>
+                    <span></span>
+                    <span class="basic-py4biii-text14">executed</span>
+                    <span>due to the</span>
+                    <span class="basic-py4biii-text16">
+                      call by object reference
+                    </span>
+                    <span>
+                      method. For more information about side effect, we
+                      discussed about this before in
+                    </span>
+                    <a href="basic-py-2b.html" class="basic-py4biii-navlink7">
+                      Expressions and Assignment
+                    </a>
+                    <span>:D.</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="basic-py4biii-column1">
+                  <h1 class="basic-py4biii-text20">
+                    <span>Python returns any datatype ;)</span>
+                    <br />
+                  </h1>
+                  <span class="basic-py4biii-text23">
+                    <span>
+                      Function can returns any datatype and it can be assigned
+                      to a variable.
+                    </span>
+                    <br />
+                  </span>
+                  <img
+                    alt="image"
+                    src="https://github.com/rydzze/TPL6213-Project/blob/main/IMG_SRC_WebReport/2%20-%20Basic%20Element%20of%20Python/4b%20Subprogram_Ariff/DesignIssue2.png?raw=true"
+                    loading="eager"
+                    class="basic-py4biii-image1"
+                  />
+                  <span class="basic-py4biii-text26">
+                    <span>Since Python is a</span>
+                    <span class="basic-py4biii-text28">
+                      dynamically-typed language
+                    </span>
+                    <span>
+                      , it can return a string, float, list, and even an object.
+                      Additionally, it also can be return and
+                    </span>
+                    <span class="basic-py4biii-text30">assigned</span>
+                    <span>into</span>
+                    <span class="basic-py4biii-text32">
+                      multiple number of variables
+                    </span>
+                    <span>.</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span class="basic-py4biii-text35">
+              <span>-</span>
+              <span class="basic-py4biii-text37">Muhammad Ariff Ridzlan</span>
+            </span>
+          </div>
+        </div>
+        <div class="basic-py4biii-reference">
+          <h1 class="basic-py4biii-text38">References</h1>
+          <span class="basic-py4biii-text39">
+            <br class="basic-py4biii-text40" />
+            <span class="basic-py4biii-text41">Pankaj. (2022, August 3).</span>
+            <span class="basic-py4biii-text42">Python return statement</span>
+            <span class="basic-py4biii-text43">. DigitalOcean.</span>
+            <br class="basic-py4biii-text44" />
+            <span class="basic-py4biii-text45">
+              &nbsp; &nbsp; &nbsp; &nbsp;
+            </span>
+            <a
+              href="https://www.digitalocean.com/community/tutorials/python-return-statement"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="basic-py4biii-link"
+            >
+              https://www.digitalocean.com/community/tutorials/python-return-statement
+            </a>
+            <br class="basic-py4biii-text46" />
+            <br class="basic-py4biii-text47" />
+            <span class="basic-py4biii-text48">
+              Srinivas, R. (2022, January 4).
+            </span>
+            <span class="basic-py4biii-text49">Side-effects in Python</span>
+            <span class="basic-py4biii-text50">. Medium.</span>
+            <br class="basic-py4biii-text51" />
+            <span class="basic-py4biii-text52">
+              &nbsp; &nbsp; &nbsp; &nbsp;
+            </span>
+            <a
+              href="https://python.plainenglish.io/side-effects-in-python-a50caad1169"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="basic-py4biii-link1"
+            >
+              https://python.plainenglish.io/side-effects-in-python-a50caad1169
+            </a>
+            <br />
+          </span>
+        </div>
+        <footer class="basic-py4biii-footer">
+          <div class="basic-py4biii-container4">
+            <a href="strace.html" class="basic-py4biii-navlink8">STRACE</a>
+          </div>
+          <span class="basic-py4biii-text54">
+            "Making System Calls Cool Again"
+          </span>
+          <div class="basic-py4biii-icon-group">
+            <svg
+              viewBox="0 0 877.7142857142857 1024"
+              class="basic-py4biii-icon"
+            >
+              <path
+                d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+        <header data-role="Header" class="header-header">
+          <a href="index.html" class="header-navlink"><span>STRACE</span></a>
+          <div class="header-container">
+            <a href="index.html" class="header-navlink01"><span>Home</span></a>
+            <span class="header-next"><span>|</span></span>
+            <div data-thq="thq-dropdown" class="header-thq-dropdown list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="header-dropdown-toggle"
+              >
+                <span class="header-text"><span>Background</span></span>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="header-dropdown-list">
+                <li data-thq="thq-dropdown" class="header-dropdown list-item">
+                  <a href="bg-1.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle01"
+                    >
+                      <span class="header-text01">
+                        <span>History of Python/Django</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown01 list-item">
+                  <a href="bg-2.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle02"
+                    >
+                      <span class="header-text02">
+                        <span>Programming Style</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown02 list-item">
+                  <a href="bg-3.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle03"
+                    >
+                      <span class="header-text03">
+                        <span>Application of Python/Django</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown03 list-item">
+                  <a href="bg-4.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle04"
+                    >
+                      <span class="header-text04">
+                        <span>Popularity Statistic</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown04 list-item">
+                  <a href="bg-5.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle05"
+                    >
+                      <span class="header-text05">
+                        <span>Implementation Method</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown05 list-item">
+                  <a href="bg-6.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle06"
+                    >
+                      <span class="header-text06">
+                        <span>Programming Environment</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <span class="header-next1"><span>|</span></span>
+            <div data-thq="thq-dropdown" class="header-thq-dropdown1 list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="header-dropdown-toggle07"
+              >
+                <span class="header-text07"><span>Basic Python</span></span>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="header-dropdown-list1">
+                <li data-thq="thq-dropdown" class="header-dropdown06 list-item">
+                  <a href="basic-py-1.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle08"
+                    >
+                      <span class="header-text08">
+                        <span>Names and Bindings</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown07 list-item">
+                  <a href="basic-py-2.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle09"
+                    >
+                      <span class="header-text09">
+                        <span>Expressions and Assignment</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown08 list-item">
+                  <a href="basic-py-3.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle10"
+                    >
+                      <span class="header-text10">
+                        <span>Control Structures</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown09 list-item">
+                  <a href="basic-py-4.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle11"
+                    >
+                      <span class="header-text11">
+                        <span>Subprograms</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <span class="header-next2"><span>|</span></span>
+            <a href="sample-app-intro.html" class="header-navlink12">
+              <span>Sample Application</span>
+            </a>
+            <span class="header-next3"><span>|</span></span>
+            <a href="training-video.html" class="header-navlink13">
+              <span>Training Video</span>
+              <br />
+            </a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </body>
+</html>

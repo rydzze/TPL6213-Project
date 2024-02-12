@@ -1,0 +1,404 @@
+:host { 
+  display: contents; 
+}
+.bg6-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+}
+.bg6-banner {
+  width: 100%;
+  height: 275px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg');
+}
+
+.bg6-main-content {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.bg6-heading {
+  color: #ff0000;
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.bg6-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.bg6-image {
+  width: 200px;
+  transform: scaleX(-1);
+  object-fit: cover;
+}
+.bg6-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.bg6-py-charm {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.bg6-idle {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.bg6-idle1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.bg6-reference {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.bg6-footer {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.bg6-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.bg6-navlink {
+  font-weight: 700;
+  text-decoration: none;
+}
+.bg6-icon {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1600px) {
+  .bg6-container {
+    background-color: #f7f7f7;
+  }
+  .bg6-banner {
+    width: 1600px;
+    height: auto;
+    align-items: center;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("/assets/external/bgportrait-1600w.jpg");
+  }
+  .bg6-main-content {
+    flex: 1;
+    width: 1300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px #d3d2d6;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: flex-start;
+    background-color: #ffffff;
+  }
+  .bg6-heading {
+    color: rgb(255, 255, 255);
+    width: 1200px;
+    height: auto;
+    font-size: 56px;
+    font-style: normal;
+    margin-top: 25px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-top: 40px;
+    border-radius: var(--dl-radius-radius-radius4);
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    background-size: cover;
+    background-image: url("/assets/external/bgportrait-1600w.jpg");
+    background-position: center;
+  }
+  .bg6-container1 {
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    margin-left: 50px;
+    padding-top: 50px;
+    margin-right: 50px;
+    flex-direction: row;
+    padding-bottom: 25px;
+    justify-content: space-between;
+  }
+  .bg6-text {
+    width: 50%;
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-container2 {
+    width: 1200px;
+    height: auto;
+    align-items: flex-start;
+    margin-left: 50px;
+    padding-top: 25px;
+    margin-right: 50px;
+    flex-direction: row;
+    padding-bottom: 50px;
+    justify-content: flex-start;
+  }
+  .bg6-py-charm {
+    width: 400px;
+    align-self: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .bg6-text06 {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .bg6-text07 {
+    width: 240px;
+  }
+  .bg6-pasted-image {
+    width: 201px;
+    height: 201px;
+    align-self: center;
+    margin-bottom: 35px;
+  }
+  .bg6-text09 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-idle {
+    width: 400px;
+    align-self: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .bg6-text17 {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .bg6-pasted-image1 {
+    width: 187px;
+    height: 203px;
+    align-self: center;
+    margin-bottom: 35px;
+  }
+  .bg6-text18 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-idle1 {
+    width: 400px;
+    align-self: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .bg6-text23 {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .bg6-pasted-image2 {
+    width: 203px;
+    height: 203px;
+    align-self: center;
+    margin-bottom: 35px;
+  }
+  .bg6-text24 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text25 {
+    text-align: justify;
+  }
+  .bg6-text30 {
+    font-size: 18px;
+    align-self: flex-end;
+    font-style: italic;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-right: 50px;
+  }
+  .bg6-text31 {
+    text-align: justify;
+    font-family: Inter;
+  }
+  .bg6-reference {
+    width: 1600px;
+    height: auto;
+    align-self: center;
+    box-shadow: 0px -1px 15px 0px #d4d4d4;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: flex-start;
+  }
+  .bg6-text33 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+  }
+  .bg6-text34 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  .bg6-text35 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text36 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text37 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text38 {
+    font-size: 16px;
+    font-style: italic;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text39 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text40 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text41 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .bg6-text42 {
+    color: var(--dl-color-primary-300);
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  .bg6-footer {
+    justify-content: space-between;
+  }
+  .bg6-navlink {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .bg6-text44 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+  .bg6-icon {
+    margin-left: 50px;
+  }
+}
+@media(max-width: 1200px) {
+  .bg6-heading {
+    color: rgb(255, 255, 255);
+  }
+}
+@media(max-width: 479px) {
+  .bg6-footer {
+    align-self: center;
+  }
+  .bg6-icon-group {
+    display: none;
+  }
+}

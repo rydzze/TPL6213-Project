@@ -1,0 +1,537 @@
+:host { 
+  display: contents; 
+}
+.sample-app-sales-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+}
+.sample-app-sales-banner {
+  width: 100%;
+  height: 275px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg');
+}
+
+.sample-app-sales-main-content {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.sample-app-sales-heading {
+  color: #ff0000;
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.sample-app-sales-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.sample-app-sales-navlink {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-sales-navlink:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-sales-navlink1 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-sales-navlink1:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-sales-navlink2 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-sales-navlink2:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-sales-navlink3 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-sales-navlink3:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-sales-navlink4 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-sales-navlink4:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-sales-content-here {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-list {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-image {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-image1 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-add {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-container3 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-image2 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-image3 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-view {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.sample-app-sales-image4 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-image5 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-delete {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-container5 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.sample-app-sales-container6 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-sales-image6 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-image7 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-sales-footer {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.sample-app-sales-container7 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.sample-app-sales-navlink5 {
+  font-weight: 700;
+  text-decoration: none;
+}
+.sample-app-sales-icon {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1600px) {
+  .sample-app-sales-container {
+    background-color: #f7f7f7;
+  }
+  .sample-app-sales-banner {
+    height: auto;
+    position: relative;
+    align-items: center;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("/assets/external/bgportrait-1500w.jpg");
+  }
+  .sample-app-sales-main-content {
+    flex: 1;
+    width: 1300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px #d3d2d6;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+  }
+  .sample-app-sales-heading {
+    color: rgb(255, 255, 255);
+    width: 1200px;
+    height: auto;
+    font-size: 64px;
+    font-style: normal;
+    margin-top: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-top: 40px;
+    border-radius: var(--dl-radius-radius-radius4);
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-image: url("/assets/external/bglandscape-1200w.jpg");
+    background-position: bottom left;
+  }
+  .sample-app-sales-container1 {
+    width: auto;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .sample-app-sales-navlink {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-sales-navlink1 {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-sales-navlink2 {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-sales-navlink3 {
+    color: #A068FF;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-sales-navlink4 {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-sales-content-here {
+    width: 1200px;
+    position: relative;
+    align-self: flex-start;
+    align-items: flex-start;
+    margin-left: 50px;
+    padding-top: var(--dl-space-space-fiveunits);
+    margin-right: 50px;
+    padding-bottom: var(--dl-space-space-threeunits);
+    justify-content: flex-start;
+  }
+  .sample-app-sales-text {
+    font-size: 36px;
+    align-self: flex-start;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sample-app-sales-list {
+    width: 100%;
+    align-self: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sample-app-sales-container2 {
+    width: 70%;
+    align-self: center;
+  }
+  .sample-app-sales-image {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+  }
+  .sample-app-sales-text03 {
+    font-size: 16px;
+    font-style: normal;
+    margin-top: var(--dl-space-space-fourunits);
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+    padding-top: 0px;
+  }
+  .sample-app-sales-image1 {
+    width: 306px;
+    height: 466px;
+    padding-left: 0px;
+  }
+  .sample-app-sales-add {
+    align-self: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .sample-app-sales-text10 {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .sample-app-sales-container3 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 25px;
+    flex-direction: row;
+  }
+  .sample-app-sales-image2 {
+    width: 663px;
+    height: 322px;
+    align-self: center;
+  }
+  .sample-app-sales-text13 {
+    font-size: 16px;
+    align-self: flex-start;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+    padding-left: var(--dl-space-space-fourunits);
+  }
+  .sample-app-sales-image3 {
+    width: 855px;
+    height: 737px;
+    align-self: center;
+  }
+  .sample-app-sales-view {
+    width: 100%;
+    align-self: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .sample-app-sales-text25 {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+  .sample-app-sales-text26 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+  .sample-app-sales-container4 {
+    justify-content: space-between;
+  }
+  .sample-app-sales-image4 {
+    width: 729px;
+    height: 455px;
+    align-self: center;
+  }
+  .sample-app-sales-image5 {
+    width: 474px;
+    height: 461px;
+    align-self: center;
+    margin-bottom: 0px;
+  }
+  .sample-app-sales-delete {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .sample-app-sales-text27 {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+  }
+  .sample-app-sales-container5 {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sample-app-sales-container6 {
+    width: 60%;
+  }
+  .sample-app-sales-image6 {
+    width: 720px;
+    height: 196px;
+  }
+  .sample-app-sales-text28 {
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 30px;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  .sample-app-sales-image7 {
+    width: 497px;
+    height: 387px;
+  }
+  .sample-app-sales-text29 {
+    font-size: 18px;
+    align-self: flex-end;
+    font-style: italic;
+    font-family: Inter;
+    font-weight: 500;
+    padding-top: 25px;
+  }
+  .sample-app-sales-footer {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+  .sample-app-sales-navlink5 {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sample-app-sales-text30 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+  .sample-app-sales-icon {
+    margin-left: 50px;
+  }
+}
+@media(max-width: 1200px) {
+  .sample-app-sales-heading {
+    color: rgb(255, 255, 255);
+  }
+}
+@media(max-width: 479px) {
+  .sample-app-sales-footer {
+    align-self: center;
+  }
+  .sample-app-sales-icon-group {
+    display: none;
+  }
+}

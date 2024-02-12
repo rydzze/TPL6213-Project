@@ -1,0 +1,722 @@
+:host { 
+  display: contents; 
+}
+.sample-app-purchases-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+}
+.sample-app-purchases-banner {
+  width: 100%;
+  height: 275px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg');
+}
+
+.sample-app-purchases-main-content {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.sample-app-purchases-heading {
+  color: #ff0000;
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.sample-app-purchases-container01 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.sample-app-purchases-navlink {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-purchases-navlink:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-purchases-navlink1 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-purchases-navlink1:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-purchases-navlink2 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-purchases-navlink2:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-purchases-navlink3 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-purchases-navlink3:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-purchases-navlink4 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sample-app-purchases-navlink4:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sample-app-purchases-content-here {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-column {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sample-app-purchases-image {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-column1 {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sample-app-purchases-container02 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sample-app-purchases-container03 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-image1 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-image2 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-container04 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-image3 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-column2 {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sample-app-purchases-container05 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 466px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sample-app-purchases-container06 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-image4 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-container07 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-image5 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-column3 {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sample-app-purchases-container08 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 460px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sample-app-purchases-container09 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-image6 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-container10 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sample-app-purchases-image7 {
+  width: 200px;
+  object-fit: cover;
+}
+.sample-app-purchases-footer {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.sample-app-purchases-container11 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.sample-app-purchases-navlink5 {
+  font-weight: 700;
+  text-decoration: none;
+}
+.sample-app-purchases-icon {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1600px) {
+  .sample-app-purchases-container {
+    background-color: #f7f7f7;
+  }
+  .sample-app-purchases-banner {
+    height: auto;
+    align-items: center;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("/assets/external/bgportrait-1500w.jpg");
+  }
+  .sample-app-purchases-main-content {
+    flex: 1;
+    width: 1300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px #d3d2d6;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+  }
+  .sample-app-purchases-heading {
+    color: rgb(255, 255, 255);
+    width: 1200px;
+    height: auto;
+    font-size: 64px;
+    font-style: normal;
+    margin-top: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-top: 40px;
+    border-radius: var(--dl-radius-radius-radius4);
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-image: url("/assets/external/bglandscape-1200w.jpg");
+    background-position: bottom left;
+  }
+  .sample-app-purchases-container01 {
+    width: auto;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .sample-app-purchases-navlink {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-purchases-navlink1 {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-purchases-navlink2 {
+    color: #A068FF;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-purchases-navlink3 {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-purchases-navlink4 {
+    color: var(--dl-color-gray-black);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 30px;
+    border-width: 1px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sample-app-purchases-content-here {
+    width: 1200px;
+    height: auto;
+    align-items: flex-end;
+    margin-left: 50px;
+    padding-top: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+  }
+  .sample-app-purchases-column {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding-bottom: 25px;
+  }
+  .sample-app-purchases-text {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .sample-app-purchases-text03 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 30px;
+  }
+  .sample-app-purchases-image {
+    width: 70%;
+    height: auto;
+    align-self: center;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+  }
+  .sample-app-purchases-column1 {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+  .sample-app-purchases-text08 {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .sample-app-purchases-container02 {
+    width: 651px;
+    height: auto;
+  }
+  .sample-app-purchases-container03 {
+    width: 100%;
+    height: auto;
+  }
+  .sample-app-purchases-text11 {
+    font-size: 16px;
+    align-self: center;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image1 {
+    width: 583px;
+    height: auto;
+    align-self: flex-start;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+  }
+  .sample-app-purchases-text12 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image2 {
+    width: 90%;
+    height: auto;
+    align-self: flex-start;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+  }
+  .sample-app-purchases-text13 {
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 35px;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+    padding-right: var(--dl-space-space-fourunits);
+  }
+  .sample-app-purchases-text15 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text17 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text19 {
+    text-decoration: underline;
+  }
+  .sample-app-purchases-text24 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text26 {
+    text-decoration: underline;
+  }
+  .sample-app-purchases-text28 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text30 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-container04 {
+    width: 550px;
+    height: auto;
+  }
+  .sample-app-purchases-text33 {
+    font-size: 16px;
+    align-self: center;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image3 {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+  .sample-app-purchases-text34 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+    padding-bottom: 25px;
+  }
+  .sample-app-purchases-text35 {
+    text-decoration: underline;
+  }
+  .sample-app-purchases-text37 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text39 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text41 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text43 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text45 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text47 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text49 {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .sample-app-purchases-text54 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text56 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-column2 {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .sample-app-purchases-text60 {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .sample-app-purchases-text63 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  .sample-app-purchases-text65 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-container06 {
+    width: 657px;
+    height: 466px;
+    padding-top: 20px;
+  }
+  .sample-app-purchases-text67 {
+    font-size: 16px;
+    align-self: center;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image4 {
+    width: 100%;
+    height: auto;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+  }
+  .sample-app-purchases-container07 {
+    width: auto;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+  .sample-app-purchases-text68 {
+    font-size: 16px;
+    align-self: center;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image5 {
+    width: 65%;
+    height: auto;
+    align-self: center;
+  }
+  .sample-app-purchases-column3 {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .sample-app-purchases-text69 {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .sample-app-purchases-text72 {
+    margin-bottom: 20px;
+  }
+  .sample-app-purchases-text74 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-text76 {
+    font-weight: 700;
+  }
+  .sample-app-purchases-container08 {
+    height: auto;
+    align-items: flex-start;
+  }
+  .sample-app-purchases-container09 {
+    width: 657px;
+    height: auto;
+  }
+  .sample-app-purchases-text78 {
+    align-self: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image6 {
+    width: 100%;
+    height: auto;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+  }
+  .sample-app-purchases-container10 {
+    width: 523px;
+    height: auto;
+  }
+  .sample-app-purchases-text79 {
+    align-self: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .sample-app-purchases-image7 {
+    width: 60%;
+    height: auto;
+    align-self: center;
+  }
+  .sample-app-purchases-text80 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 500;
+    padding-top: 25px;
+  }
+  .sample-app-purchases-text82 {
+    font-style: italic;
+  }
+  .sample-app-purchases-footer {
+    justify-content: space-between;
+  }
+  .sample-app-purchases-navlink5 {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sample-app-purchases-text83 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+  .sample-app-purchases-icon {
+    margin-left: 50px;
+  }
+}
+@media(max-width: 1200px) {
+  .sample-app-purchases-heading {
+    color: rgb(255, 255, 255);
+  }
+}
+@media(max-width: 479px) {
+  .sample-app-purchases-footer {
+    align-self: center;
+  }
+  .sample-app-purchases-icon-group {
+    display: none;
+  }
+}

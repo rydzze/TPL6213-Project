@@ -1,0 +1,605 @@
+:host { 
+  display: contents; 
+}
+.basic-py2d-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+}
+.basic-py2d-banner {
+  width: 100%;
+  height: 275px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg');
+}
+
+.basic-py2d-main-content {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.basic-py2d-heading {
+  color: #ff0000;
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+}
+.basic-py2d-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.basic-py2d-navlink {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-navlink1 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink1:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-navlink2 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink2:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-navlink3 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink3:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.basic-py2d-navlink4 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink4:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-navlink5 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink5:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-navlink6 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink6:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-navlink7 {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.basic-py2d-navlink7:hover {
+  color: #a068ff;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.basic-py2d-relational-bool-expr {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.basic-py2d-row {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.basic-py2d-column {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.basic-py2d-text03 {
+  text-align: justify;
+}
+.basic-py2d-example {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.basic-py2d-container3 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.basic-py2d-text07 {
+  text-align: justify;
+}
+.basic-py2d-container4 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.basic-py2d-text41 {
+  text-align: justify;
+}
+.basic-py2d-reference {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.basic-py2d-footer {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.basic-py2d-container5 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.basic-py2d-navlink8 {
+  font-weight: 700;
+  text-decoration: none;
+}
+.basic-py2d-icon {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 1600px) {
+  .basic-py2d-container {
+    background-color: #f7f7f7;
+  }
+  .basic-py2d-banner {
+    height: auto;
+    align-items: center;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("/assets/external/bgportrait-1500w.jpg");
+  }
+  .basic-py2d-main-content {
+    flex: 1;
+    width: 1300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px #d3d2d6;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+  }
+  .basic-py2d-heading {
+    color: rgb(255, 255, 255);
+    width: 1200px;
+    height: auto;
+    font-size: 64px;
+    font-style: normal;
+    margin-top: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-top: 40px;
+    border-radius: var(--dl-radius-radius-radius4);
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    background-size: auto;
+    background-image: url("/assets/external/bglandscape-1200w.jpg");
+  }
+  .basic-py2d-container1 {
+    width: 700px;
+    height: auto;
+    align-self: center;
+    margin-left: 50px;
+    padding-top: 20px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  .basic-py2d-navlink {
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    border-width: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-navlink1 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 25px;
+    border-width: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-navlink2 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 25px;
+    border-width: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-navlink3 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 25px;
+    border-width: 1px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-container2 {
+    width: 800px;
+    height: auto;
+    align-self: center;
+    margin-left: 50px;
+    padding-top: 10px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+  .basic-py2d-navlink4 {
+    color: #A068FF;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    border-width: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-navlink5 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 25px;
+    border-width: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-navlink6 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 25px;
+    border-width: 1px;
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-navlink7 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-left: 25px;
+    border-width: 1px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .basic-py2d-relational-bool-expr {
+    width: 1200px;
+    align-items: flex-end;
+    margin-left: 50px;
+    padding-top: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+  }
+  .basic-py2d-row {
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  .basic-py2d-column {
+    flex: 1;
+    align-items: flex-start;
+  }
+  .basic-py2d-text {
+    font-size: 36px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .basic-py2d-text03 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  .basic-py2d-example {
+    justify-content: space-between;
+  }
+  .basic-py2d-container3 {
+    width: 575px;
+    height: auto;
+  }
+  .basic-py2d-text06 {
+    font-size: 24px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .basic-py2d-text07 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  .basic-py2d-text09 {
+    font-weight: 700;
+  }
+  .basic-py2d-text13 {
+    font-weight: 700;
+  }
+  .basic-py2d-text17 {
+    font-weight: 700;
+  }
+  .basic-py2d-text21 {
+    font-weight: 700;
+  }
+  .basic-py2d-text25 {
+    font-weight: 700;
+  }
+  .basic-py2d-text29 {
+    font-weight: 700;
+  }
+  .basic-py2d-text33 {
+    font-weight: 700;
+  }
+  .basic-py2d-pasted-image {
+    width: 369px;
+    height: 54px;
+    margin-top: 25px;
+    border-radius: var(--dl-radius-radius-radius4);
+    margin-bottom: 25px;
+  }
+  .basic-py2d-text36 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .basic-py2d-text38 {
+    font-style: italic;
+  }
+  .basic-py2d-container4 {
+    width: 575px;
+    height: auto;
+  }
+  .basic-py2d-text40 {
+    font-size: 24px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .basic-py2d-text41 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  .basic-py2d-text43 {
+    font-weight: 700;
+  }
+  .basic-py2d-text47 {
+    font-weight: 700;
+  }
+  .basic-py2d-text49 {
+    font-weight: 700;
+  }
+  .basic-py2d-text51 {
+    font-weight: 700;
+  }
+  .basic-py2d-text56 {
+    font-weight: 700;
+  }
+  .basic-py2d-pasted-image1 {
+    width: 468px;
+    height: 80px;
+    margin-top: 25px;
+    border-radius: var(--dl-radius-radius-radius4);
+    margin-bottom: 25px;
+  }
+  .basic-py2d-text59 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  .basic-py2d-text60 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 500;
+    padding-top: 25px;
+  }
+  .basic-py2d-text62 {
+    font-style: italic;
+  }
+  .basic-py2d-reference {
+    width: 1600px;
+    height: auto;
+    align-self: center;
+    box-shadow: 0px -1px 15px 0px #ebebeb;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: flex-start;
+  }
+  .basic-py2d-text63 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+  }
+  .basic-py2d-text64 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  .basic-py2d-text67 {
+    font-style: italic;
+  }
+  .basic-py2d-link {
+    color: var(--dl-color-primary-300);
+    text-decoration: underline;
+  }
+  .basic-py2d-text74 {
+    font-style: italic;
+  }
+  .basic-py2d-link1 {
+    color: var(--dl-color-primary-300);
+    text-decoration: underline;
+  }
+  .basic-py2d-footer {
+    justify-content: space-between;
+  }
+  .basic-py2d-navlink8 {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .basic-py2d-text79 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+  .basic-py2d-icon {
+    margin-left: 50px;
+  }
+}
+@media(max-width: 1200px) {
+  .basic-py2d-heading {
+    color: rgb(255, 255, 255);
+  }
+}
+@media(max-width: 479px) {
+  .basic-py2d-footer {
+    align-self: center;
+  }
+  .basic-py2d-icon-group {
+    display: none;
+  }
+}

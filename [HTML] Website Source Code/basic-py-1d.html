@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Strace | Basic Python</title>
+    <meta name="description" content="TPL6213 Project" />
+    <meta property="og:title" content="Strace" />
+    <meta property="og:description" content="TPL6213 Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/pfp.jpg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <style>
+      html {
+      scroll-behavior: smooth;
+      }
+    </style>
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./basic-py-1d.css" rel="stylesheet" />
+
+      <div class="basic-py1d-container">
+        <div class="basic-py1d-banner">
+          <div class="basic-py1d-main-content">
+            <h1 class="basic-py1d-heading">NAMES AND BINDINGS</h1>
+            <div class="basic-py1d-container1">
+              <a href="basic-py-1a.html" class="basic-py1d-navlink button">
+                Name
+              </a>
+              <a href="basic-py-1b.html" class="basic-py1d-navlink1 button">
+                Address, Value and Type
+              </a>
+              <a href="basic-py-1c.html" class="basic-py1d-navlink2 button">
+                The Concept of Binding
+              </a>
+              <a href="basic-py-1d.html" class="basic-py1d-navlink3 button">
+                Scope and Lifetime
+              </a>
+              <a href="basic-py-1e.html" class="basic-py1d-navlink4 button">
+                Referencing Environments
+              </a>
+              <a href="basic-py-1f.html" class="basic-py1d-navlink5 button">
+                Named Constants
+              </a>
+            </div>
+            <div class="basic-py1d-scope">
+              <h1 class="basic-py1d-text">
+                <span>Scope of Variable</span>
+                <br />
+              </h1>
+              <h2 class="basic-py1d-text003">
+                <span>Determing the Code Section</span>
+                <br />
+              </h2>
+              <span class="basic-py1d-text006">
+                <span>Unlike the other programming languages,</span>
+                <span class="basic-py1d-text008">Python use indentation</span>
+                <span>to</span>
+                <span class="basic-py1d-text010">identify the scope</span>
+                <span>
+                  of the code section. For example, two source code lines with
+                  same level of identation indicates that both lines is part of
+                  the same section. If the level of identation of the line is
+                  higher than previous line, then it is a nested section. This
+                  situation can be found in if-else statement, looping like
+                  for-loop, while loop, and do-while loop, and function
+                  definition.
+                </span>
+                <br />
+              </span>
+              <div class="basic-py1d-container2">
+                <div class="basic-py1d-container3">
+                  <h2 class="basic-py1d-text013">
+                    <span>Local Scope</span>
+                    <br />
+                  </h2>
+                  <span class="basic-py1d-text016">
+                    <span class="basic-py1d-text017">
+                      Any variable within the local scope only can be seen by
+                      other code lines with the
+                    </span>
+                    <span class="basic-py1d-text018">
+                      same level of scoping
+                    </span>
+                    <span class="basic-py1d-text019">. For example,&nbsp;</span>
+                    <span class="basic-py1d-text020">formset</span>
+                    <span class="basic-py1d-text021">,</span>
+                    <span class="basic-py1d-text022">supplierobj</span>
+                    <span class="basic-py1d-text023">, and</span>
+                    <span class="basic-py1d-text024">context</span>
+                    <span class="basic-py1d-text025">
+                      variables is declared inside
+                    </span>
+                    <span class="basic-py1d-text026">get</span>
+                    <span>
+                      function and only visible in that specific scope. Thus,
+                      the variables cannot be used outside.
+                    </span>
+                    <br class="basic-py1d-text028" />
+                  </span>
+                  <h2 class="basic-py1d-text029">
+                    <span>Nonlocal Scope</span>
+                    <br />
+                  </h2>
+                  <span class="basic-py1d-text032">
+                    <span>Any variable declared</span>
+                    <span class="basic-py1d-text034">outside of a scope</span>
+                    <span>
+                      can be considered as non-local variable. Referring to the
+                    </span>
+                    <span class="basic-py1d-text036">for-loop</span>
+                    <span>inside</span>
+                    <span class="basic-py1d-text038">post</span>
+                    <span>function, the</span>
+                    <span class="basic-py1d-text040">billitem.billno</span>
+                    <span>variable was assigned with the value of</span>
+                    <span class="basic-py1d-text042">billobj</span>
+                    <span>
+                      , another variable that was defined outside of it.
+                    </span>
+                    <br />
+                  </span>
+                  <h2 class="basic-py1d-text045">
+                    <span>Global Scope</span>
+                    <br />
+                  </h2>
+                  <span class="basic-py1d-text048">
+                    <span>Any variable declared at the</span>
+                    <span class="basic-py1d-text050">
+                      Python's main body&nbsp;
+                    </span>
+                    <span>(</span>
+                    <span class="basic-py1d-text052">no identation</span>
+                    <span>) is a</span>
+                    <span class="basic-py1d-text054">global variable</span>
+                    <span>. During the assignment of</span>
+                    <span class="basic-py1d-text056">supplierobj</span>
+                    <span>variable in</span>
+                    <span class="basic-py1d-text058">post</span>
+                    <span>function,</span>
+                    <span class="basic-py1d-text060">Supplier</span>
+                    <span>
+                      class is retrieved from a different file, through import
+                      statement.
+                    </span>
+                    <br />
+                  </span>
+                  <h2 class="basic-py1d-text063">
+                    <span>Static Scope</span>
+                    <br />
+                  </h2>
+                  <span class="basic-py1d-text066">
+                    <span>
+                      Python use static scoping (also known as lexical scoping).
+                      If the declaration of a variable is not found in a scope,
+                      it will
+                    </span>
+                    <span class="basic-py1d-text068">search</span>
+                    <span>for the</span>
+                    <span class="basic-py1d-text070">declaration</span>
+                    <span>in the</span>
+                    <span class="basic-py1d-text072">
+                      static parent of the scope
+                    </span>
+                    <span>.</span>
+                    <br />
+                  </span>
+                </div>
+                <img
+                  alt="pastedImage"
+                  src="public/external/nab-scope-600h.png"
+                  class="basic-py1d-pasted-image"
+                />
+              </div>
+            </div>
+            <div class="basic-py1d-lifetime">
+              <div class="basic-py1d-row">
+                <div class="basic-py1d-column">
+                  <h1 class="basic-py1d-text075">
+                    <span>Lifetime of Variable</span>
+                    <br />
+                  </h1>
+                  <span class="basic-py1d-text078">
+                    <span>Due to the</span>
+                    <span class="basic-py1d-text080">
+                      nature of dynamic variable binding
+                    </span>
+                    <span>, the memory management of Python support</span>
+                    <span class="basic-py1d-text082">stack-dynamic</span>
+                    <span>, as well as</span>
+                    <span class="basic-py1d-text084">
+                      implicit heap-dynamic
+                    </span>
+                    <span>
+                      .&nbsp;The interpreter allocates a specific amount of
+                      memory on the computer, known as the private heap space.
+                      Memory is dynamically allocated by the interpreter when
+                      necessary, and a garbage collector takes over deallocation
+                      automatically.
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="basic-py1d-container4">
+                <div class="basic-py1d-container5">
+                  <h2 class="basic-py1d-text087">Stack-Dynamic</h2>
+                  <span class="basic-py1d-text088">
+                    <span>
+                      Python will allocates the memory when the declaration
+                      statements occurs, which mean that its
+                    </span>
+                    <span class="basic-py1d-text090">
+                      only happen during the execution
+                    </span>
+                    <span>of the programme.</span>
+                    <br />
+                  </span>
+                  <img
+                    alt="image"
+                    src="public/external/nab-lifetime1-600w.png"
+                    class="basic-py1d-image"
+                  />
+                  <span class="basic-py1d-text093">
+                    <span>
+                      Based on the source code, memory will be allocated for all
+                      variables inside
+                    </span>
+                    <span class="basic-py1d-text095">class SaleView</span>
+                    <span>
+                      only when an instance is created for the class during
+                      runtime.
+                    </span>
+                    <br />
+                  </span>
+                </div>
+                <div class="basic-py1d-container6">
+                  <h2 class="basic-py1d-text098">Implicit Heap-Dynamic</h2>
+                  <span class="basic-py1d-text099">
+                    <span>Assignment statements can causes the</span>
+                    <span class="basic-py1d-text101">
+                      allocation and deallocation
+                    </span>
+                    <span>of the</span>
+                    <span class="basic-py1d-text103">memory inside</span>
+                    <span>the</span>
+                    <span class="basic-py1d-text105">heap</span>
+                    <span>, that can increase or decrease in size.</span>
+                    <br />
+                  </span>
+                  <img
+                    alt="pastedImage"
+                    src="public/external/nab-lifetime2-600w.png"
+                    class="basic-py1d-pasted-image1"
+                  />
+                  <span class="basic-py1d-text108">
+                    <span>
+                      From the given sample code, memory can be allocated inside
+                      variable
+                    </span>
+                    <span class="basic-py1d-text110">form</span>
+                    <span>and</span>
+                    <span class="basic-py1d-text112">formset</span>
+                    <span>
+                      . If there is none, the memory space would be minimal or
+                      lesser.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <span class="basic-py1d-text114">
+                <span>-</span>
+                <span class="basic-py1d-text116">Muhammad Ariff Ridzlan</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="basic-py1d-reference">
+          <h1 class="basic-py1d-text117">References</h1>
+          <span class="basic-py1d-text118">
+            <br />
+            <span>Lunga, N. (2023, November 8).</span>
+            <span class="basic-py1d-text121">
+              How to Manage Memory with Python
+            </span>
+            <span>. Squash.</span>
+            <br />
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <a
+              href="https://www.squash.io/how-to-manage-memory-with-python/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="basic-py1d-link"
+            >
+              https://www.squash.io/how-to-manage-memory-with-python/
+            </a>
+            <br />
+            <br />
+            <span>Ugochukwu, U. (2020, June 22).</span>
+            <span class="basic-py1d-text128">
+              Understanding Python scope and indentation
+            </span>
+            <span>. Hashnode.</span>
+            <br />
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <a
+              href="https://Ugochukwu, U. (2020, June 22). Understanding Python scope and indentation - Hashnode. Hashnode. Retrieved December 24, 2023, from https://hashnode.com/post/understanding-python-scope-and-indentation-ckbpbc3m501usjps1fe27ti0n"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="basic-py1d-link1"
+            >
+              https://hashnode.com/post/understanding-python-scope-and-indentation-ckb
+            </a>
+            <span class="basic-py1d-text132">pbc3m501usjps1fe27ti0n</span>
+            <br />
+            <br />
+            <span>Mcwaves, D. (2017, December 16).</span>
+            <span class="basic-py1d-text136">
+              A Python Tutorial To Understanding Scopes and Closures
+            </span>
+            <span>. Medium.</span>
+            <br />
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            <a
+              href="https://medium.com/@dannymcwaves/a-python-tutorial-to-understanding-scopes-and-closures-c6a3d3ba0937"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="basic-py1d-link2"
+            >
+              https://medium.com/@dannymcwaves/a-python-tutorial-to-understanding-scopes-and-closures-c6a3d3ba0937
+            </a>
+            <br />
+          </span>
+        </div>
+        <footer class="basic-py1d-footer">
+          <div class="basic-py1d-container7">
+            <a href="strace.html" class="basic-py1d-navlink6">STRACE</a>
+          </div>
+          <span class="basic-py1d-text141">
+            "Making System Calls Cool Again"
+          </span>
+          <div class="basic-py1d-icon-group">
+            <svg viewBox="0 0 877.7142857142857 1024" class="basic-py1d-icon">
+              <path
+                d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"
+              ></path>
+            </svg>
+          </div>
+        </footer>
+        <header data-role="Header" class="header-header">
+          <a href="index.html" class="header-navlink"><span>STRACE</span></a>
+          <div class="header-container">
+            <a href="index.html" class="header-navlink01"><span>Home</span></a>
+            <span class="header-next"><span>|</span></span>
+            <div data-thq="thq-dropdown" class="header-thq-dropdown list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="header-dropdown-toggle"
+              >
+                <span class="header-text"><span>Background</span></span>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="header-dropdown-list">
+                <li data-thq="thq-dropdown" class="header-dropdown list-item">
+                  <a href="bg-1.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle01"
+                    >
+                      <span class="header-text01">
+                        <span>History of Python/Django</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown01 list-item">
+                  <a href="bg-2.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle02"
+                    >
+                      <span class="header-text02">
+                        <span>Programming Style</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown02 list-item">
+                  <a href="bg-3.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle03"
+                    >
+                      <span class="header-text03">
+                        <span>Application of Python/Django</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown03 list-item">
+                  <a href="bg-4.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle04"
+                    >
+                      <span class="header-text04">
+                        <span>Popularity Statistic</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown04 list-item">
+                  <a href="bg-5.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle05"
+                    >
+                      <span class="header-text05">
+                        <span>Implementation Method</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown05 list-item">
+                  <a href="bg-6.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle06"
+                    >
+                      <span class="header-text06">
+                        <span>Programming Environment</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <span class="header-next1"><span>|</span></span>
+            <div data-thq="thq-dropdown" class="header-thq-dropdown1 list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="header-dropdown-toggle07"
+              >
+                <span class="header-text07"><span>Basic Python</span></span>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="header-dropdown-list1">
+                <li data-thq="thq-dropdown" class="header-dropdown06 list-item">
+                  <a href="basic-py-1.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle08"
+                    >
+                      <span class="header-text08">
+                        <span>Names and Bindings</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown07 list-item">
+                  <a href="basic-py-2.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle09"
+                    >
+                      <span class="header-text09">
+                        <span>Expressions and Assignment</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown08 list-item">
+                  <a href="basic-py-3.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle10"
+                    >
+                      <span class="header-text10">
+                        <span>Control Structures</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="header-dropdown09 list-item">
+                  <a href="basic-py-4.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="header-dropdown-toggle11"
+                    >
+                      <span class="header-text11">
+                        <span>Subprograms</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <span class="header-next2"><span>|</span></span>
+            <a href="sample-app-intro.html" class="header-navlink12">
+              <span>Sample Application</span>
+            </a>
+            <span class="header-next3"><span>|</span></span>
+            <a href="training-video.html" class="header-navlink13">
+              <span>Training Video</span>
+              <br />
+            </a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </body>
+</html>
