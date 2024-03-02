@@ -1,8 +1,17 @@
-## TPL6213 Project using Python and Django
+# Website Source Code
 
-### 🚀 How to run the website 
+This project is a repository for the source code of our website. The website was built using a free website builder, [TeleportHQ](https://teleporthq.io/professional-website-builder), and the source code has been extracted to HTML and also some front-end frameworks.
 
-1. Install [Python](https://www.python.org/downloads/) and [Django](https://www.djangoproject.com/download/) first on your machine.
-2. Clone this repository in your machine using [GitHub Desktop](https://desktop.github.com/) or any methods.
-3. In the same directory as `manage.py`, open cmd and run `python manage.py runserver` (_ignore the error_).
-4. Copy the local host link given and you are good to go :D. 
+## Technologies Used
+
+- HTML
+- React
+- Vue
+- Angular
+
+## Author
+
+- [Ariff Ridzlan](https://github.com/rydzze)
+- [Nabil Irfan](https://github.com/nabilang)
+- [Hafiz](https://github.com/IbnAsmuni)
+- [Alia Alisa](https://github.com/alia4lisa)
